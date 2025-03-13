@@ -1,9 +1,9 @@
 
-
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import submitPrompt from '@/tools/libs/services/submitPrompt';
 import { useRouter } from 'next/router';
+
 
 
 
@@ -33,6 +33,7 @@ const PresentationOutline = () => {
 
             // Redirect to the PresentationResponse page without the long URL
             router.push('/PresentationResponse');
+            
         }
     } catch (error) {
         console.error('Error generating presentation:', error);
